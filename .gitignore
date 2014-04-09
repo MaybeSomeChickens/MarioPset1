@@ -18,15 +18,15 @@ int main(void)
     int a, b, c;
     
     for (a = 0; a < height; a++)
-        {            
-            for (b = 0; b < a + 2; b++)            
-            {
-                for (c = 0; c < a - height; c++)
+        {
+            for (c = 0; c < a - height; c++)
                 {
                    printf(" "); 
+                }                            
+            for (b = 0; b < a + 2; b++)            
+                {                
+                    printf("#");
                 }
-                printf("#");
-            }
             printf("\n");
         }
 }
